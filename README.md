@@ -4,8 +4,8 @@
 
 ### Feature
 
-**Cluster** : A set of nodes joined together through the membership service.
-**Auto-discovery** : Auto make client when a new node joined.
+* **Cluster** : A set of nodes joined together through the membership service.
+* **Auto-discovery** : Auto make client when a new node joined.
 
 ### Usage
 
