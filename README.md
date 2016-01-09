@@ -9,6 +9,14 @@
 
 ### Usage
 
+The gossip's port default is options.port+1 .
+
+The server2 join the cluster with seed - 127.0.0.1:4445.
+
+The client join the cluster with seed - 127.0.0.1:4445 too, it also can client to the server2 with gossip.
+
+So you can start a node with a known active node in the cluster, and then you can call the service with {role: xxx, cmd:xxx} but don't need to care about their physical location in the cluster.
+
 #### Server
 
     var Seneca = require('seneca');
