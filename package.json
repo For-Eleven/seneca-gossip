@@ -1,23 +1,29 @@
 {
-  "name": "gossiper",
-  "description": "node-gossip implements a gossip protocol",
+  "name": "seneca-gossip",
+  "description": "seneca gossip protocol support",
   "version": "0.0.3",
-  "author": "Bob Potter <bobby.potter@gmail.com>",
-  "contributors": [
-    {
-      "name": "Christopher Mooney",
-      "email": "chris@dod.net"
-    }
-  ],
+  "author": "Jiang Feng <for1988@126.com>",
   "repository": {
-    "type" : "git",
-    "url"  : "git://github.com/bpot/node-gossip.git" 
+    "type": "git",
+    "url": "git://github.com/For-Eleven/seneca-gossip.git"
   },
-  "keywords": ["gossip"],
+  "keywords": [
+    "seneca",
+    "gossip"
+  ],
+  "peerDependencies": {
+    "seneca": "*"
+  },
   "dependencies": {
-    "msgpack"     : ">= 0.0.0"
+    "lodash": "^3.10.1",
+    "msgpack": ">= 0.0.0"
   },
   "main": "index.js",
-  "scripts": { "test": "expresso -I lib test/*" },
-  "engines": { "node": "0.4.x || 0.5.x || 0.6.x || 0.7.x || 0.8.x || 0.9.x" }
+  "scripts": {
+    "test": "expresso -I lib test/*"
+  },
+  "devDependencies": {
+    "co": "^4.6.0",
+    "seneca": "^0.9.3"
+  }
 }
